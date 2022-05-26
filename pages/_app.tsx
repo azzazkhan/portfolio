@@ -5,6 +5,7 @@ import {DefaultSeo as DefaultSEO} from "next-seo";
 import ProgressBar from "nextjs-progressbar";
 import {PageTransition} from "next-page-transitions";
 import "tailwindcss/tailwind.css";
+import "styles/app.scss";
 
 const App: FC<AppProps> = ({Component, pageProps}) => {
   return (

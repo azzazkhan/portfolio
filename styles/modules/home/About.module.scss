@@ -1,0 +1,13 @@
+.section {
+  @apply text-white text-center bg-primary;
+  padding: 120px 15% 220px;
+}
+
+.heading {
+  @apply text-2xl font-semibold mb-10;
+}
+
+.description {
+  @apply text-xl leading-9;
+}
+

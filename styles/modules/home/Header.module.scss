@@ -1,0 +1,20 @@
+.header {
+  @apply flex items-center justify-end mx-auto space-x-8;
+  height: 100px;
+  width: 90%;
+}
+
+.link {
+  @apply inline-block lg:text-base hover:text-primary transition-colors;
+}
+
+.button {
+  @apply text-primary bg-white font-medium py-2 px-6;
+  @apply border-2 border-solid rounded-full border-primary;
+  @apply lg:py-2.5  hover:bg-primary;
+
+  &:hover {
+    color: white !important;
+  }
+}
+

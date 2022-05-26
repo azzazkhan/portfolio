@@ -1,15 +1,17 @@
 import type {NextPage} from "next";
-import Link from "next/link";
 import {Fragment} from "react";
+// import Header from "components/Header";
+// import Intro from "components/Intro";
+// import AboutMe from "components/About";
+import MySkills from "components/Skills";
 
 const Home: NextPage = () => {
   return (
     <Fragment>
-      <p className="mb-5">Homepage</p>
-
-      <Link href="/about">
-        <a>About</a>
-      </Link>
+      {/* <Header /> */}
+      {/* <Intro /> */}
+      {/* <AboutMe /> */}
+      <MySkills />
     </Fragment>
   );
 };
