@@ -1,0 +1,21 @@
+.section {
+  @apply text-center text-lg;
+}
+
+.heading {
+  @apply text-4xl mb-4;
+}
+
+.wrapper {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-5 gap-y-10;
+  padding: 3rem 5% 0;
+}
+
+.project {
+  @apply bg-no-repeat rounded-xl shadow-md;
+  background-position: top center;
+  background-size: cover;
+  height: 250px;
+  width: 90%;
+}
+

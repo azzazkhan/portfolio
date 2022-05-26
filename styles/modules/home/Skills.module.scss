@@ -3,8 +3,9 @@
   @apply lg:flex-row;
   width: 85%;
   min-height: 400px;
+  margin-top: -100px;
 
-  @media only screen and (min-width: 992px) {
+  @media screen and (min-width: 992px) {
     &::after {
       content: "";
       @apply absolute top-1/2 left-1/2 block h-4/5 w-px;
@@ -22,7 +23,7 @@
     @apply absolute bottom-6 left-1/2 block h-px w-4/5;
     @apply transform -translate-x-1/2 -translate-y-1/2;
     background: #cccccc;
-    @media only screen and (min-width: 992px) {
+    @media screen and (min-width: 992px) {
       display: none !important;
     }
   }

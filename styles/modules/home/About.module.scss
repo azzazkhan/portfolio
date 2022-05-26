@@ -1,10 +1,13 @@
 .section {
   @apply text-white text-center bg-primary;
-  padding: 120px 15% 220px;
+  padding: 120px 10% 220px;
+  @media screen and (min-width: 992px) {
+    padding: 120px 15% 220px;
+  }
 }
 
 .heading {
-  @apply text-2xl font-semibold mb-10;
+  @apply text-3xl font-semibold mb-10;
 }
 
 .description {
