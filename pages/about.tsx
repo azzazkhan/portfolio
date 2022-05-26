@@ -2,17 +2,17 @@ import type {NextPage} from "next";
 import Link from "next/link";
 import {Fragment} from "react";
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <Fragment>
-      <p className="mb-5">Homepage</p>
+      <p className="mb-5">About me</p>
 
-      <Link href="/about">
-        <a>About</a>
+      <Link href="/">
+        <a>Home</a>
       </Link>
     </Fragment>
   );
 };
 
-export default Home;
+export default About;
 
