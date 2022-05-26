@@ -5,6 +5,8 @@ import Intro from "components/Intro";
 import AboutMe from "components/About";
 import MySkills from "components/Skills";
 import MyWork from "components/Work";
+import Collaboration from "components/Collaboration";
+import Footer from "components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +16,8 @@ const Home: NextPage = () => {
       <AboutMe />
       <MySkills />
       <MyWork />
+      <Collaboration />
+      <Footer />
     </Fragment>
   );
 };

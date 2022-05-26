@@ -8,10 +8,10 @@ const Intro: FC = () => {
   return (
     <div className={styles.section}>
       <h2 className={classNames(styles.heading, "exo2 lg:text-4.5xl")}>
-        Senior Web Developer and Cloud Engineer
+        Senior Web Developer and <span>Cloud Engineer</span>
       </h2>
       <p className={classNames(styles.slogan, "ubuntu")}>
-        I design awesome web apps, and I love what I do.
+        I create awesome web apps, and I love what I do.
       </p>
 
       <div className={styles.avatarWrapper}>

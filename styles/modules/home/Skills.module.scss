@@ -1,9 +1,9 @@
 .section {
-  @apply relative bg-white flex flex-col mx-auto rounded-2xl shadow-lg;
+  @apply relative bg-white flex flex-col rounded-2xl shadow-lg;
   @apply lg:flex-row;
   width: 85%;
   min-height: 400px;
-  margin-top: -100px;
+  margin: -100px auto 160px;
 
   @media screen and (min-width: 992px) {
     &::after {

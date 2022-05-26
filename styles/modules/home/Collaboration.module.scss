@@ -1,0 +1,24 @@
+.section {
+  @apply text-center;
+  padding: 50px 0 100px;
+}
+
+.heading {
+  @apply text-4xl;
+}
+
+.description {
+  @apply text-lg;
+  margin: 15px 10px 60px;
+}
+
+.button {
+  @apply text-primary bg-white font-medium py-2 px-6;
+  @apply border-2 border-solid rounded-full border-primary;
+  @apply lg:py-2.5  hover:bg-primary;
+
+  &:hover {
+    color: white !important;
+  }
+}
+
