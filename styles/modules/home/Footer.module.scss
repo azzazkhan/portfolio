@@ -42,7 +42,7 @@
 }
 
 .socialIconsWrapper {
-  @apply flex justify-center my-5 lg:mt-10;
+  @apply flex justify-center mt-5 lg:mt-10;
 }
 
 .socialIcon {
@@ -51,6 +51,13 @@
   @apply rounded-full text-xl mx-1.5 hover:bg-white hover:text-primary;
   svg {
     @apply h-7 md:h-6;
+  }
+}
+
+.copyrights {
+  @apply mt-10 text-lg text-center text-gray-300;
+  a {
+    @apply text-white font-semibold inline-block mx-0.5;
   }
 }
 

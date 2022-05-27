@@ -1,5 +1,5 @@
 .section {
-  @apply text-center;
+  @apply text-center lg:mt-10;
   padding: 50px 0 100px;
 }
 
@@ -8,8 +8,11 @@
 }
 
 .description {
-  @apply text-lg;
-  margin: 15px 10px 60px;
+  @apply text-lg mt-4 mx-2.5 mb-14;
+
+  a {
+    @apply text-primary hover:underline;
+  }
 }
 
 .button {

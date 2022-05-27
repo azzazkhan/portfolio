@@ -60,6 +60,17 @@ const Footer: FC = () => {
           icon={faGithub}
         />
       </div>
+      <div className={classNames(styles.copyrights, "lato")}>
+        Handcrafted by{" "}
+        <a
+          href={`https://www.github.com/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}`}
+          target="_blank"
+          rel="noreferrer"
+          title="Azzaz Khan">
+          me
+        </a>{" "}
+        &copy; twentytwentytwo
+      </div>
     </footer>
   );
 };
