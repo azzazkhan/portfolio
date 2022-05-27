@@ -1,6 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config) => {
+  webpack: (config, {isServer}) => {
+    // Fixes npm packages that depend on `fs` module on client side
+    if (!isServer)
+      config.node = {
+        // fs: 'empty'
+        global: true,
+        __filename: true,
+        __dirname: true
+      };
+
     config.module.rules.push({
       test: /\.(png|jpe?g|gif)$/i,
       loader: "file-loader"

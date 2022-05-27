@@ -13,6 +13,9 @@ declare namespace NodeJS {
     readonly NEXT_PUBLIC_SEO_KEYWORDS: string;
     readonly NEXT_PUBLIC_APP_STORY: string;
     readonly NEXT_PUBLIC_TWITTER_HANDLE: string;
+    readonly NEXT_PUBLIC_FACEBOOK_USERNAME: string;
+    readonly NEXT_PUBLIC_GITHUB_USERNAME: string;
+    readonly NEXT_PUBLIC_LINKEDIN_USERNAME: string;
     readonly NEXT_PUBLIC_PERSONAL_EMAIL: string;
   }
 }

@@ -1,4 +1,7 @@
 import {FC} from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {IconProp} from "@fortawesome/fontawesome-svg-core";
+import {faFacebookF, faGithub, faLinkedinIn, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import classNames from "classnames";
 import styles from "styles/modules/home/Footer.module.scss";
 
@@ -22,31 +25,40 @@ const ContactBox: FC = () => {
   );
 };
 
+interface SocialIconProps {
+  url?: string;
+  icon: IconProp;
+}
+const SocialIcon: FC<SocialIconProps> = ({url = "#", icon}) => {
+  return (
+    <a href={url} target="_blank" rel="noreferrer" className={styles.socialIcon}>
+      <FontAwesomeIcon icon={icon} />
+    </a>
+  );
+};
+
 const Footer: FC = () => {
   return (
     <footer className={styles.footer}>
       <ContactBox />
-      <p className={styles.tagline}>
-        Living, learning & leveling up one
-        <br />
-        day at a time.
-      </p>
-      <div className={styles.socialIcons}>
-        <a href="#">
-          <i className="fab fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a href="#">
-          <i className="fab fa-dribbble" aria-hidden="true"></i>
-        </a>
-        <a href="#">
-          <i className="fab fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a href="#">
-          <i className="fab fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a href="#">
-          <i className="fab fa-github" aria-hidden="true"></i>
-        </a>
+      <p className={styles.tagline}>Living, learning & leveling up one day at a time.</p>
+      <div className={styles.socialIconsWrapper}>
+        <SocialIcon
+          url={`https://www.twitter.com/${process.env.NEXT_PUBLIC_TWITTER_HANDLE}`}
+          icon={faTwitter}
+        />
+        <SocialIcon
+          url={`https://www.linkedin.com/in/${process.env.NEXT_PUBLIC_LINKEDIN_USERNAME}`}
+          icon={faLinkedinIn}
+        />
+        <SocialIcon
+          url={`https://www.facebook.com/${process.env.NEXT_PUBLIC_FACEBOOK_USERNAME}`}
+          icon={faFacebookF}
+        />
+        <SocialIcon
+          url={`https://www.github.com/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}`}
+          icon={faGithub}
+        />
       </div>
     </footer>
   );
