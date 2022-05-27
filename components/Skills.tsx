@@ -59,24 +59,24 @@ const MySkills: FC = () => {
   return (
     <div className={styles.section}>
       <Card
-        icon="/images/designer.svg"
-        title="Designer"
-        description="I value simple content structure, clean design patterns, and thoughtful interactions.">
-        <Enjoyments title="Things I enjoy designing">UX, UI, Web, Mobile, Apps, Logos</Enjoyments>
+        icon="/images/cloud-computing.png"
+        title="Cloud Computing"
+        description="I like to deploy and manage apps at scale.">
+        <Enjoyments title="Services I use">Compute, Serverless, Docker, DevOps</Enjoyments>
         <Tools
-          title="Design Tools"
-          tools={["Adobe Illustrator", "Adobe XD", "Figma", "Pen & Paper", "Sketch"]}
+          title="Cloud Providers"
+          tools={["AWS", "Google Cloud", "Digital Ocean", "Firebase", "GitHub"]}
         />
       </Card>
 
       <Card
         icon="/images/frontend.svg"
         title="Developer"
-        description="I like to code things from scratch, and enjoy bringing ideas to life in the browser.">
-        <Enjoyments title="Languages I speak">Typescript, Python, C++, R</Enjoyments>
+        description="I like to code things from scratch, and enjoy bringing ideas to life.">
+        <Enjoyments title="Languages I speak">HTML, CSS, Typescript, PHP</Enjoyments>
         <Tools
-          title="Dev Tools"
-          tools={["Microsoft VS Code", "GitHub", "OhMyZsh", "AWS", "Google Cloud", "Digital Ocean"]}
+          title="Dev Techs"
+          tools={["React/Next", "Vue/Nuxt", "Express & Nest", "Laravel", "WordPress"]}
         />
       </Card>
     </div>
