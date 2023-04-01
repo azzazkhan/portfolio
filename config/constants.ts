@@ -1,9 +1,0 @@
-export const SITE_NAME = process.env.NEXT_PUBLIC_APP_NAME || "Next JS";
-export const TAGLINE = process.env.NEXT_PUBLIC_APP_TAGLINE || "The React Framework for Production";
-export const DESCRIPTION = process.env.NEXT_PUBLIC_APP_DESCRIPTION;
-export const KEYWORDS = process.env.NEXT_PUBLIC_SEO_KEYWORDS;
-export const SITE_URL = process.env.NEXT_PUBLIC_APP_URL;
-export const API_URL = process.env.NEXT_PUBLIC_API_URL;
-export const LOGO_URI = SITE_URL + "/logo.png";
-export const SITE_ABOUT = process.env.NEXT_PUBLIC_APP_STORY;
-export const TWITTER_HANDLE = process.env.NEXT_PUBLIC_TWITTER_HANDLE;
