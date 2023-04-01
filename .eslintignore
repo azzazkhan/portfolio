@@ -1,0 +1,8 @@
+node_modules/
+public/
+*.css
+*.scss
+*.svg
+./*.js
+./*.ts
+./*.cjs
