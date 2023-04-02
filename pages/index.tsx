@@ -1,11 +1,14 @@
 import type { NextPage } from 'next';
 import { DefaultLayout } from 'layouts';
-import { Intro } from 'components/homepage';
+import { Intro, Gallery } from 'components/homepage';
+import ContentWrapper from 'components/homepage/ContentWrapper';
 
 const Home: NextPage = () => {
     return (
         <DefaultLayout>
             <Intro />
+            <Gallery />
+            <ContentWrapper />
         </DefaultLayout>
     );
 };
