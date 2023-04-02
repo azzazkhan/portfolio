@@ -1,4 +1,5 @@
 import { FC, Fragment, ReactNode } from 'react';
+import Header from './Header';
 import Footer from './Footer';
 
 interface Props {
@@ -14,6 +15,7 @@ const Home: FC<Props> = ({ children }) => {
                 </div>
             </div>
             <div className="relative">
+                <Header />
                 <main>{children}</main>
                 <Footer />
             </div>

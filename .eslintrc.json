@@ -26,19 +26,10 @@
         "sourceType": "module",
         "project": "tsconfig.json"
     },
-    "plugins": [
-        "react",
-        "react-hooks",
-        "import",
-        "@typescript-eslint",
-        "prettier"
-    ],
+    "plugins": ["react", "react-hooks", "import", "@typescript-eslint", "prettier"],
     "rules": {
         "spaced-comment": "error",
-        "quotes": [
-            "error",
-            "single"
-        ],
+        "quotes": ["error", "single"],
         "no-console": "off",
         "no-plusplus": "off",
         "no-param-reassign": "off",
@@ -50,12 +41,7 @@
         "react/jsx-filename-extension": [
             "warn",
             {
-                "extensions": [
-                    ".tsx",
-                    ".ts",
-                    ".js",
-                    ".jsx"
-                ]
+                "extensions": [".tsx", ".ts", ".js", ".jsx"]
             }
         ],
         "import/extensions": [
