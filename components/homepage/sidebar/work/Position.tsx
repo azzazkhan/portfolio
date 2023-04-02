@@ -32,7 +32,7 @@ const Position: FC<Props> = ({ company, from, role, till, icon }) => {
                         dateTime={
                             typeof from === 'number'
                                 ? from.toString()
-                                : moment(parseDate(from)).format('MM-YYYY').toString()
+                                : moment(parseDate(from)).format('YYYY-MM-DD').toString()
                         }
                     >
                         {typeof from === 'number'
@@ -46,7 +46,7 @@ const Position: FC<Props> = ({ company, from, role, till, icon }) => {
                                 ? new Date().getFullYear().toString()
                                 : typeof till === 'number'
                                 ? till.toString()
-                                : moment(parseDate(till)).format('MM-YYYY').toString()
+                                : moment(parseDate(till)).format('YYYY-MM-DD').toString()
                         }
                     >
                         {typeof till === 'undefined'
