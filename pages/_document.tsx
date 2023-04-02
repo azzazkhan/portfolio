@@ -10,7 +10,7 @@ class _Document extends Document {
         return (
             <Html>
                 <Head />
-                <body>
+                <body className="flex flex-col h-full bg-zinc-50 dark:bg-black">
                     <Main />
                     <NextScript />
                 </body>

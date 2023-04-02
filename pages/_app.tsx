@@ -16,7 +16,9 @@ const App: FC<AppProps> = (props) => {
                 />
             </Head>
             <MantineProvider>
-                <Component {...pageProps} />
+                <main className="w-full min-h-screen overflow-x-hidden">
+                    <Component {...pageProps} />
+                </main>
             </MantineProvider>
         </>
     );

@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['pages/**/*.ts', 'pages/**/*.tsx', 'components/**/*.ts', 'components/**/*.tsx'],
+    darkMode: 'class',
+    content: ['pages/**/*.{ts,tsx}', 'components/**/*.{ts,tsx}', 'layouts/**/*.{ts,tsx}'],
     theme: {
         extend: {
             fontSize: {

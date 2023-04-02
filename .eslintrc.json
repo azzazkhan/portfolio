@@ -97,9 +97,7 @@
         "react/no-array-index-key": "off",
         "react/no-unused-prop-types": "warn",
         "import/order": "off",
-        "consistent-return": "off",
-        "eslint-disable dot-notation": "off",
-        "eslint-disable @typescript-eslint/dot-notation": "off"
+        "no-restricted-exports": "off"
     },
     "settings": {
         "import/resolver": {

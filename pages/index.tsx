@@ -1,7 +1,13 @@
 import type { NextPage } from 'next';
+import { DefaultLayout } from 'layouts';
+import { Intro } from 'components/homepage';
 
 const Home: NextPage = () => {
-    return <div className="text-white bg-green-500">Hello world!</div>;
+    return (
+        <DefaultLayout>
+            <Intro />
+        </DefaultLayout>
+    );
 };
 
 export default Home;
