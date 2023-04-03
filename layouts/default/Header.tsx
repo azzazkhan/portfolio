@@ -1,10 +1,11 @@
-import { useEffect, type FC, type MouseEventHandler } from 'react';
+import type { FC, MouseEventHandler } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import avatar from 'assets/images/avatar.jpg';
 import SunIcon from 'assets/icons/sun.svg';
 import MoonIcon from 'assets/icons/moon.svg';
-import { useLocalStorage } from '@mantine/hooks';
+import { useHeadroom, useLocalStorage } from '@mantine/hooks';
+import { rem } from '@mantine/core';
 
 interface LinkItem {
     url: string;
@@ -19,19 +20,12 @@ const Header: FC = () => {
         { url: '/uses', label: 'Uses' },
     ];
 
-    const [colorScheme, setColorScheme] = useLocalStorage<'dark' | 'light'>({
+    const [, setColorScheme] = useLocalStorage<'dark' | 'light'>({
         key: 'color-scheme',
         defaultValue: 'light',
     });
 
-    useEffect(() => {
-        if (
-            colorScheme === 'dark' &&
-            !document.getElementsByTagName('html')[0].classList.contains('dark')
-        )
-            document.getElementsByTagName('html')[0].classList.add('dark');
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    const pinned = useHeadroom({ fixedAt: 200 });
 
     const toggleColorScheme: MouseEventHandler<HTMLButtonElement> = (event) => {
         const documentElement = document.getElementsByTagName('html')[0];
@@ -46,9 +40,14 @@ const Header: FC = () => {
     };
 
     return (
-        <header className="pointer-events-none relative z-50 flex flex-col">
-            <div className="top-0 z-10 h-16 pt-6">
-                <div className="sm:px-8 top-[var(--header-top,theme(spacing.6))] w-full">
+        <header
+            className="pointer-events-none fixed top-0 z-10 flex flex-col w-full max-w-7xl lg:px-8 transition-transform duration-300"
+            style={{
+                transform: `translate3d(0, ${pinned ? 0 : rem(-110)}, 0)`,
+            }}
+        >
+            <div className="h-16 pt-6">
+                <div className="sm:px-8 w-full">
                     <div className="mx-auto max-w-7xl lg:px-8">
                         <div className="relative px-4 sm:px-8 lg:px-12">
                             <div className="mx-auto max-w-2xl lg:max-w-5xl">

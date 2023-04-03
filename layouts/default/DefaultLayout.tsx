@@ -16,7 +16,9 @@ const Home: FC<Props> = ({ children }) => {
             </div>
             <div className="relative">
                 <Header />
-                <main>{children}</main>
+                <main>
+                    <div className="mt-16 sm:mt-32">{children}</div>
+                </main>
                 <Footer />
             </div>
         </Fragment>
